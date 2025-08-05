@@ -44,7 +44,7 @@ To set up the complete system:
   - Secure session management with iron-session
   - JWT token handling
   - Protected routes and middleware
-  - WorkOS integration for enterprise authentication
+  - BetterAuth integration for authentication
   > **Note:** This implementation does not include organization/tenant management features. For multi-tenant applications, additional development would be required.
 
 - 🌐 **Internationalization**
@@ -88,13 +88,8 @@ npm install
 
 1. Copy `.env.example` to `.env.local`
 2. Configure the following environment variables:
-   - `APP_URL`: Frontend application URL
-   - `APP_SECRET`: Secret for session encryption
-   - `API_URL`: Backend API URL
-   - `WORKOS_API_KEY`: WorkOS API key for authentication
-   - `WORKOS_CLIENT_ID`: WorkOS client ID
-   - `NEXT_PUBLIC_WORKOS_REDIRECT_URI`: WorkOS redirect URI for authentication
-   - `PLUNK_API_KEY`: Plunk API key for email delivery
+   - `NEXT_PUBLIC_APP_URL`: Frontend application URL
+   - `NEXT_PUBLIC_API_URL`: Backend API URL
 
 ## Development
 
