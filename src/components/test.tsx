@@ -12,9 +12,11 @@ export default function Test() {
 
   return (
     <Button onClick={async () => {
-        await authClient.signIn.social({
-          provider: "discord"
+        const response = await authClient.signIn.social({
+          provider: "discord",
+          callbackURL: "http://localhost:3000/",
         })
+        console.log(response)
     }}>
       Sign in
     </Button>
